@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BooksNation</title>
+
+    <!--Bootstrap cdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!--Owl Carousel 2-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+
+    <!--Font Awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!--Coustom CSS File-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- start header -->
+        <header id="header">
+            <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
+                <p class="font-rale font-size-12 text-black-50 m-0">New Delhi - 110001</p>
+                <div class="font-rale font-size-14">
+                    <a href="#" class="px-3 border-right border-left text-dark">Login</a>
+                    <a href="#" class="px-3 border-right text-dark">Whishlist (0)</a>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark color-second-bg">
+                <a class="navbar-brand" href="#">BooksNation</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav m-auto font-rubik">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">On Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Category <i class="fas fa-chevron-down"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products <i class="fas fa-chevron-down"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Coming Soon</a>
+                        </li>
+                  </ul>
+                    <form action="#" class="font-size-14 font-rale">
+                        <a href="#" class="py-2 rounded-pill color-primary-bg">
+                            <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                            <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+                        </a>
+                    </form>
+                </div>
+            </nav>
+               <!-- /Primary Navigation -->
+
+        </header>
+    <!-- /start header -->
+
+    <!-- start main-site -->
+        <main id="main-site">    <!-- In this section all the content of main site will be present such as 'top sales' etc-->
+            <!-- Owl Carousel -->
+                <section id="banner-area">                 <!--This is basically for the banner that is getting displayed on starting of our main site-->
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="../assets/Banner/banner1.png" alt="Banner1" height="550px" width="840px">    <!--Here we are adding banner images for the display-->
+                        </div>
+                        <div class="item">
+                            <img src="../assets/Banner/banner2.png" alt="Banner2" height="550px" width="840px">    <!--Here we are adding banner images for the display-->
+                        </div>
+                        <div class="item">
+                            <img src="../assets/Banner/banner3.png" alt="Banner3" height="550px" width="840px">    <!--Here we are adding banner images for the display-->
+                        </div>
+                        <div class="item">
+                            <img src="../assets/Banner/banner4.png" alt="Banner4" height="550px" width="840px">    <!--Here we are adding banner images for the display-->
+                        </div>
+                    </div>
+                </section>
+            <!-- /Owl Carousel -->
+
+            <!--Top Sale-->
+            <section id="top-sale">                           <!--This is the next section of our site that will be displayed just after the banner section-->
+                <div class="container py-5">
+                    <h4 class="font-rubik font-size-20">Top Sales</h1>
+                    <hr>
+                    <!--Owl carousel-->
+                    <div class="owl-carousel owl-theme">
+                        <div class="item py-2 px-2">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product1.jpg" alt="product1" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>One Indian Girl</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$152.24</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product2.png" alt="product2" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>The Girl in Room 105</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$453.00</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product3.jpg" alt="product3" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>The Great Gatsby</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$76.90</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product4.jpg" alt="product4" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>The Hobbit</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$92.46</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product5.jpg" alt="product5" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>A Clockwork Orange</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$123.25</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product6.jpg" alt="product6" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>Fifty Shades of Grey</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$310.82</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product7.jpg" alt="product7" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>bachchan madhushala</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$263.87</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product8.png" alt="product8" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>Pratigya</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$172.87</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product9.jpg" alt="product9" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>Godan</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$230.12</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product10.jpg" alt="product10" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>Anand Math</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$27.45</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product11.jpg" alt="product11" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>Aur Talwar Toot Gayi</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$182.97</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product12.jpg" alt="product12" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>Kamayani</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$92.54</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product13.png" alt="product13" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>A Suitable Boy</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$112.82</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--Owl carousel-->    
+                </div>
+            </section>
+            <!--/Top Sale-->
+
+            <!-- Special Price-->
+            <section id="special-price">
+                <div class="container py-5">
+                    <h4 class="font-rubik font-size-20">Special Price</h4>
+                    <div id="filters" class="button-group text-right">
+                        <button class="btn is-checked" data-filter="*">All Authors</button>
+                        <button class="btn" data-filter=".jk-rowling">JK Rowling</button>
+                        <button class="btn" data-filter=".chetan-bhagat">Chetan Bhagat</button>
+                        <button class="btn" data-filter=".william-shakespeare">William Shakespeare</button>
+                    </div>
+
+                    <div class="grid">
+                        <div class="grid-item jk-rowling border">
+                            <div class="item py-2 px-2" style="width: 200px;">
+                                <div class="product font-rale">
+                                  <a href="#"><img src="../assets/Product/20.jpg" alt="product1" class="img-fluid"></a>
+                                  <div class="text-center">
+                                    <h6>Harry Potter: The Philosopher's Stone</h6>
+                                    <div class="rating text-warning font-size-12">
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                      <span>$152</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item chetan-bhagat border">
+                            <div class="item py-2 px-2" style="width: 200px;">
+                             <div class="product font-rale">
+                               <a href="#"><img src="../assets/Product/11.jpg" alt="product1" class="img-fluid"></a>
+                               <div class="text-center">
+                                 <h6>Half Girlfriend<br>Chetan Bhagat</h6>
+                                 <div class="rating text-warning font-size-12">
+                                   <span><i class="fas fa-star"></i></span>
+                                   <span><i class="fas fa-star"></i></span>
+                                   <span><i class="fas fa-star"></i></span>
+                                   <span><i class="fas fa-star"></i></span>
+                                   <span><i class="far fa-star"></i></span>
+                                 </div>
+                                 <div class="price py-2">
+                                   <span>$152</span>
+                                 </div>
+                                 <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                               </div>
+                             </div>
+                            </div>
+                        </div>
+                           <div class="grid-item william-shakespeare border">
+                            <div class="item py-2 px-2" style="width: 200px;">
+                             <div class="product font-rale">
+                               <a href="#"><img src="../assets/Product/30.jpg" alt="product1" class="img-fluid"></a>
+                               <div class="text-center">
+                                 <h6>Hamlet<br>William Shakespeare</h6>
+                                 <div class="rating text-warning font-size-12">
+                                   <span><i class="fas fa-star"></i></span>
+                                   <span><i class="fas fa-star"></i></span>
+                                   <span><i class="fas fa-star"></i></span>
+                                   <span><i class="fas fa-star"></i></span>
+                                   <span><i class="far fa-star"></i></span>
+                                 </div>
+                                 <div class="price py-2">
+                                   <span>$152</span>
+                                 </div>
+                                 <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                               </div>
+                             </div>
+                           </div>
+                           </div>
+                           <div class="grid-item jk-rowling border">
+                            <div class="item py-2 px-2" style="width: 200px;">
+                             <div class="product font-rale">
+                               <a href="#"><img src="../assets/Product/22.jpg" alt="product1" class="img-fluid"></a>
+                               <div class="text-center">
+                                 <h6>Harry Potter: The Deadly Hallows</h6>
+                                 <div class="rating text-warning font-size-12">
+                                   <span><i class="fas fa-star"></i></span>
+                                   <span><i class="fas fa-star"></i></span>
+                                   <span><i class="fas fa-star"></i></span>
+                                   <span><i class="fas fa-star"></i></span>
+                                   <span><i class="far fa-star"></i></span>
+                                 </div>
+                                 <div class="price py-2">
+                                   <span>$152</span>
+                                 </div>
+                                 <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                               </div>
+                             </div>
+                           </div>
+                           </div>
+                           <div class="grid-item chetan-bhagat border">
+                            <div class="item py-2 px-2" style="width: 200px;">
+                             <div class="product font-rale">
+                               <a href="#"><img src="../assets/Product/10.jpg" alt="product1" class="img-fluid"></a>
+                               <div class="text-center">
+                                 <h6>2 States<br>Chetan Bhagat</h6>
+                                 <div class="rating text-warning font-size-12">
+                                   <span><i class="fas fa-star"></i></span>
+                                   <span><i class="fas fa-star"></i></span>
+                                   <span><i class="fas fa-star"></i></span>
+                                   <span><i class="fas fa-star"></i></span>
+                                   <span><i class="far fa-star"></i></span>
+                                 </div>
+                                 <div class="price py-2">
+                                   <span>$152</span>
+                                 </div>
+                                 <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                               </div>
+                             </div>
+                           </div>
+                           </div>
+                           <div class="grid-item william-shakespeare border">
+                            <div class="item py-2 px-2" style="width: 200px;">
+                              <div class="product font-rale">
+                                <div class="d-flex flex-column">
+                                  <a href="#"><img src="../assets/Product/31.jpg" class="img-fluid" alt="pro1"></a>
+                                  <div class="text-center">
+                                    <h6>Macbeth<br>William Shakespeare</h6>
+                                    <div class="rating text-warning font-size-12">
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                      <span>$152</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid-item william-shakespeare border">
+                            <div class="item py-2 px-2" style="width: 200px;">
+                              <div class="product font-rale">
+                                <div class="d-flex flex-column">
+                                  <a href="#"><img src="../assets/Product/32.jpg" class="img-fluid" alt="pro1"></a>
+                                  <div class="text-center">
+                                    <h6>Romeo and Juliet<br>William Shakespeare</h6>
+                                    <div class="rating text-warning font-size-12">
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                      <span>$152</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid-item william-shakespeare border">
+                            <div class="item py-2 px-2" style="width: 200px;">
+                              <div class="product font-rale">
+                                <div class="d-flex flex-column">
+                                  <a href="#"><img src="../assets/Product/33.jpg" class="img-fluid" alt="pro1"></a>
+                                  <div class="text-center">
+                                    <h6>Othello<br>William Shakespeare</h6>
+                                    <div class="rating text-warning font-size-12">
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                      <span>$152</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid-item william-shakespeare border">
+                            <div class="item py-2 px-2" style="width: 200px;">
+                              <div class="product font-rale">
+                                <div class="d-flex flex-column">
+                                  <a href="#"><img src="../assets/Product/34.jpg" class="img-fluid" alt="pro1"></a>
+                                  <div class="text-center">
+                                    <h6>Julius Caesar<br>William Shakespeare</h6>
+                                    <div class="rating text-warning font-size-12">
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                      <span>$152</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid-item jk-rowling border">
+                            <div class="item py-2 px-2" style="width: 200px;">
+                              <div class="product font-rale">
+                                <div class="d-flex flex-column">
+                                  <a href="#"><img src="../assets/Product/21.jpg" class="img-fluid" alt="pro1"></a>
+                                  <div class="text-center">
+                                    <h6>Fantastic Beasts<br>JK Rowling</h6>
+                                    <div class="rating text-warning font-size-12">
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="fas fa-star"></i></span>
+                                      <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                      <span>$252</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Special Price-->
+
+            <!--Banner Ads-->
+            <section id="banner-ads">
+                <div class="container py-5 text-center">
+                    <img src="../assets/Banner%20ads/ads6.jpg" width="500px" alt="banner1" class="img-fluid">
+                    <img src="../assets/Banner%20ads/ads5.jpg" height="50px" width="500px" alt="banner2" class="img-fluid">
+                </div>
+            </section>
+            <!--Banner Ads-->
+
+            <!--New Books-->
+            <section id="Newbooks">
+                <div class="container py-5">
+                    <h4 class="font-rubik font-size-20">New Books</h4> 
+                    <hr>
+                    <!--Owl carousel-->
+                    <div class="owl-carousel owl-theme">
+                        <div class="item py-2 px-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product1.jpg" alt="product1" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>One Indian Girl</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$152.24</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product2.png" alt="product2" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>The Girl in Room 105</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$453.00</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product3.jpg" alt="product3" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>The Great Gatsby</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$76.90</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product4.jpg" alt="product4" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>The Hobbit</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$92.46</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product5.jpg" alt="product5" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>A Clockwork Orange</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$123.25</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product6.jpg" alt="product6" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>Fifty Shades of Grey</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$310.82</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product7.jpg" alt="product7" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>bachchan madhushala</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$263.87</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product8.png" alt="product8" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>Pratigya</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$172.87</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product9.jpg" alt="product9" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>Godan</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$230.12</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product10.jpg" alt="product10" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>Anand Math</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$27.45</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product11.jpg" alt="product11" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>Aur Talwar Toot Gayi</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$182.97</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product12.jpg" alt="product12" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>Kamayani</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$92.54</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 px-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Product/product13.png" alt="product13" class="img-fluid"></a>   <!--Here we are adding banner images for the display-->
+                                <div class="text-center">
+                                    <h6>A Suitable Boy</h6>
+                                    <div class="rating text-warning font-size-12">   <!--Here we are adding the rating system for the display-->
+                                        <span><i class="fas fa-star"></i></span>   
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">                        <!--This is for the price section-->
+                                        <span>$112.82</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>    <!--From this action we can add the product in our cart-->
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--Owl carousel-->    
+                </div>
+            </section>
+            <!--New Books-->
+
+            <!--Authors-->
+            <section id="Authors">
+                <div class="container py-5">
+                    <h4 class="font-rubik font-size-20">Trending Authors</h4>
+                    <hr>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="card border-0 font-rale mr-5" style="width: 18rem">
+                                <hr5 class="card-title font-size-16">Arundhati Roy</hr5>
+                                <img src="../assets/Authors/A1.jpg" alt="A1" class="card-img-top">
+                                <p class="card-text font-size-14 text-black-50 py-1">Suzanna Arundhati Roy (born 24 November 1961) is an Indian author best known for her novel The God of Small Things (1997), which won the....</p>
+                                <a href="https://en.wikipedia.org/wiki/Arundhati_Roy" class="color-second text-left">Read More</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 font-rale mr-5" style="width: 18rem">
+                                <hr5 class="card-title font-size-16">Munshi Premchand</hr5>
+                                <img src="../assets/Authors/A2.jpg" alt="A1" class="card-img-top">
+                                <p class="card-text font-size-14 text-black-50 py-1">Dhanpat Rai Srivastava (31 July 1880 - 8 October 1936), better known by his pen name Munshi Premchand, was an Indian writer famous for....</p>
+                                <a href="https://en.wikipedia.org/wiki/Premchand" class="color-second text-left">Read More</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 font-rale mr-5" style="width: 18rem">
+                                <hr5 class="card-title font-size-16">Chetan Bhagat</hr5>
+                                <img src="../assets/Authors/A3.jpg" alt="A1" class="card-img-top">
+                                <p class="card-text font-size-14 text-black-50 py-1">Chetan Bhagat (born 22 April 1974) is an Indian author and columnist. He was included in Time magazine's list of World's 100 Most Inf....</p>
+                                <a href="https://en.wikipedia.org/wiki/Chetan_Bhagat" class="color-second text-left">Read More</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 font-rale mr-5" style="width: 18rem">
+                                <hr5 class="card-title font-size-16">William Shakespeare</hr5>
+                                <img src="../assets/Authors/A4.jpg" alt="A1" class="card-img-top">
+                                <p class="card-text font-size-14 text-black-50 py-1">William Shakespeare (bapt. 26 April 1564 – 23 April 1616) was an English playwright, poet, and actor, widely regarded as the greatest....</p>
+                                <a href="https://en.wikipedia.org/wiki/William_Shakespeare" class="color-second text-left">Read More</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 font-rale mr-5" style="width: 18rem">
+                                <hr5 class="card-title font-size-16">Jhumpa Lahiri</hr5>
+                                <img src="../assets/Authors/A5.jpg" alt="A1" class="card-img-top">
+                                <p class="card-text font-size-14 text-black-50 py-1">Nilanjana Sudeshna "Jhumpa" Lahiri (born July 11, 1967) is an American author known for her short stories, novels and essays in Engli....</p>
+                                <a href="https://en.wikipedia.org/wiki/Jhumpa_Lahiri" class="color-second text-left">Read More</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 font-rale mr-5" style="width: 18rem">
+                                <hr5 class="card-title font-size-16">Harivansh Rai Bachchan</hr5>
+                                <img src="../assets/Authors/A6.jpg" alt="A1" class="card-img-top">
+                                <p class="card-text font-size-14 text-black-50 py-1">Harivansh Rai Bachchan (27 November 1907 - 18 January 2003) was an Indian poet of the Nayi Kavita literary movement (romantic upsurge....</p>
+                                <a href="https://en.wikipedia.org/wiki/Harivansh_Rai_Bachchan" class="color-second text-left">Read More</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 font-rale mr-5" style="width: 18rem">
+                                <hr5 class="card-title font-size-16">Jaishankar Prasad</hr5>
+                                <img src="../assets/Authors/A7.jpg" alt="A1" class="card-img-top">
+                                <p class="card-text font-size-14 text-black-50 py-1">Jaishankar Prasad (30 January 1889  – 15 November 1937) was a prominent figure in modern Hindi literature as well as Hindi theatre....</p>
+                                <a href="https://en.wikipedia.org/wiki/Jaishankar_Prasad" class="color-second text-left">Read More</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 font-rale mr-5" style="width: 18rem">
+                                <hr5 class="card-title font-size-16">Bankim Chandra Chatterjee</hr5>
+                                <img src="../assets/Authors/A8.jpg" alt="A1" class="card-img-top">
+                                <p class="card-text font-size-14 text-black-50 py-1">Bankim Chandra Chatterjee or Bankim Chandra Chattopadhyay, (26 June 1838–8 April 1894) was an Indian novelist, poet and journalist....</p>
+                                <a href="https://en.wikipedia.org/wiki/Bankim_Chandra_Chatterjee" class="color-second text-left">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Authors-->
+        </main>
+    <!-- /start main-site -->
+
+    <!-- start footer -->
+        <footer id="footer" class="bg-dark text-white py-5">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12">
+                <h4 class="font-rubik font-size-20">BooksNation</h4>
+                <p class="font-size-14 font-rale text-white-50">Purchase all varieties of books from anywhere.</p>
+                </div>
+                <div class="col-lg-4 col-12">
+                <h4 class="font-rubik font-size-20">Newsletter</h4>
+                <form class="form-row">
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Email *">
+                    </div>
+                    <div class="col">
+                    <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                    </div>
+                </form>
+                </div>
+                <div class="col-lg-2 col-12">
+                <h4 class="font-rubik font-size-20">Information</h4>
+                <div class="d-flex flex-column flex-wrap">
+                    <a href="#" class="font-rale font-size-14 text-white-50 pb-1">About Us</a>
+                    <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Delivery Information</a>
+                    <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Privacy Policy</a>
+                    <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Terms & Conditions</a>
+                </div>
+                </div>
+                <div class="col-lg-2 col-12">
+                <h4 class="font-rubik font-size-20">Account</h4>
+                <div class="d-flex flex-column flex-wrap">
+                    <a href="#" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
+                    <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
+                    <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Wish List</a>
+                    <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Newsletters</a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <div class="copyright text-center bg-dark text-white py-2">
+            <p class="font-rale font-size-14">&copy; Copyrights 2021. Design By <a href="#" class="color-second">Owais Salim | Ayush Yadav</a></p>
+        </div>
+    <!-- /start footer -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+    <!--Isotope Plugin CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
